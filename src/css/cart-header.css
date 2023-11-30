@@ -20,7 +20,7 @@
 }
 
 .title-cart {
-    color: var(--text);
+    color: var(--black-color);
     font-size: 24px;
     line-height: 1.16;
     text-transform: uppercase;
