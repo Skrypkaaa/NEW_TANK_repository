@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/NEW_TANK_repository/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Boutique</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/NEW_TANK_repository/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Boutique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
+  <script type="module" crossorigin src="/NEW_TANK_repository/commonHelpers2.js"></script>
+  <link rel="stylesheet" href="/NEW_TANK_repository/assets/styles-d5b40f08.css">
+</head>
+
+<body>
+  
+  
+  <section class="filters">
+    <div class="container">
+        <div class="styleFilterPosition">
+            <h2 class="styleFilter">Filters:</h2>
+        </div>
+        <form class="search-form">
+            <div class="styleForm">
+                <div class="search-container">
+                    <input type="text" name="keyword" class="search-input" autocomplete="off"
+                        placeholder="Search for anything" />
+                    <button type="submit" class="search-button">
+                        <svg width="20" height="20">
+                            <use href="./img/kupi-tank-sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="category-container">
+                    <select name="category" id="categorySelect" class="categorySelect"></select>
+                    <button type="button" class="arrow-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="#010101" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+  
+  <div>
     
-    <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet"> 
-    <script type="module" crossorigin src="/NEW_TANK_repository/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/NEW_TANK_repository/assets/styles-e5336a01.css">
-  </head>
-  <body>
-    
-    
-    
-    
-    <div>
-      
-      <section class="discount discount-container">
+    <section class="discount discount-container">
     <h2 class="discount-caption">Discount products</h2>
 
     <ul class="discount-list" data-ls-name="discount">
@@ -84,8 +110,9 @@
         </li>
     </ul>
 </section>
-    </div>
-    
-    
-  </body>
+  </div>
+  
+  
+</body>
+
 </html>
