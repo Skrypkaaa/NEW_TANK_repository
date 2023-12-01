@@ -1,12 +1,10 @@
 
-@media screen and (min-width: 375px){
-
-}
 
 .footer {
     background-color: var(--green-color);
     padding-top: 40px;
     padding-bottom: 20px;
+    display: flex;
 }
 
 
@@ -266,4 +264,3 @@ input:focus:invalid {
 .error.active {
     padding: 0.3em;
 }
-
