@@ -1,5 +1,5 @@
 import { FoodBoutiqueAPI } from './bourique-api';
-import  Sweet from 'sweetalert2';
+import  Swal from 'sweetalert2';
 
 const FoodAp = new FoodBoutiqueApi();
 
@@ -51,7 +51,7 @@ form.addEventListener('submit', async function (event) {
         Messag = resp.data.message;
     }
 
-    Sweet.fire({
+    Swal.fire({
         icon: 'good',
         title: Messag,
         showConfirmButton: true,
@@ -73,7 +73,7 @@ form.addEventListener('submit', async function (event) {
             Messagerror = error.resp.data.message;
 }
 
-Sweet.fire({
+    Swal.fire({
     icon: 'error',
     title: 'Error',
     showConfirmButton: true,
