@@ -1,4 +1,4 @@
-gitexport class Storage {
+export class Storage {
     constructor(storageName) {
         this.storageName = storageName;
     }
