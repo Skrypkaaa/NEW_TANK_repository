@@ -1,4 +1,4 @@
-import { FoodBoutiqueApi } from './food-api';
+import { FoodBoutiqueApi } from './bourique-api';
 import  Sweet from 'sweetalert2';
 
 const FoodAp = new FoodBoutiqueApi();
