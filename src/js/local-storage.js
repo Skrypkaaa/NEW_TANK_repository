@@ -41,7 +41,7 @@ export class ShopStorage {
         );
     }
 
-    setAllProducts(dataArray) {
+    setAllProduct(dataArray) {
         localStorage.setItem(this.storageName, JSON.stringify(dataArray));
     }
 
@@ -50,12 +50,12 @@ export class ShopStorage {
     }
 
     removeProduct(productId) {
-        this.setAllProducts(
+        this.setAllProduct(
         this.getAllProducts().filter(item => item._id !== productId)
         );
     }
 
     removeAllProducts() {
-        this.setAllProducts([]);
+        this.setAllProduct([]);
     }
 }

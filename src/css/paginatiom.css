@@ -23,7 +23,7 @@
   outline: transparent;
   border-radius: 50%;
   background-color: transparent;
-  color: var(--second-text);
+  color: var(--grey-color);
   font-size: 14px;
   line-height: 1.43;
   padding: 0;
@@ -32,20 +32,19 @@
   justify-content: center;
   align-items: center;
 
-  transition: color var(--transition-duration) var(--transition-timing-function),
-    background-color var(--transition-duration)
-      var(--transition-timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pagin-btn:is(:active, :focus),
 .pagin-btn.active-pagin-btn {
-  background-color: var(--second-bg);
-  color: var(--btn-gray);
+  background-color: var(--green-color);
+  color: var(--light-color);
 }
 
 .pagin-btn:is(:hover) {
-  background-color: var(--btn-green-dark);
-  color: var(--btn-gray);
+  background-color: var(--green-hover);
+  color: var(--light-color);
 }
 
 .disabled,
@@ -57,7 +56,7 @@
 
 .prev-btn,
 .next-btn {
-  background-color: var(--third-bg);
+  background-color: var(--white-color);
 }
 
 .prev-btn svg,

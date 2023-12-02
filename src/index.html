@@ -15,14 +15,30 @@
 
 <body>
   <load src="partials/header.html" />
-  <load src="partials/hero.html" />
-  <load src="partials/filters.html" />
-  <load src="partials/products-list.html" />
-  <div>
-    <load src="partials/popular-products.html" />
-    <load src="partials/discount-products.html" />
-  </div>
+  
+  <main>
+    <load src="partials/hero.html" />
+      <section class="content-section">
+        <div class="container content-container">
+          <load src="partials/filters.html" />
+          <div class="content-wrapper">
+            <div class="products-wrapper">
+              <ul
+                class="product-card-list"
+                data-ls-name="product"
+                id="products"
+              ></ul>
+              <load src="partials/pagination.html" />
+            </div>
+            <load src="partials/popular-and-discount.html" />
+          </div>
+        </div>
+      </section>
+  </main>
+
   <load src="partials/footer.html" />
+  <load src="partials/modal-product.html" />
+
   <script type="module" src="/main.js"></script>
 </body>
 

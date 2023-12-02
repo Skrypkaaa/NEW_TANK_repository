@@ -1,4 +1,4 @@
-<section class="filters">
+<!-- <section class="filters">
     <div class="container">
         <div class="styleFilterPosition">
             <h2 class="styleFilter">Filters:</h2>
@@ -26,4 +26,77 @@
             </div>
         </form>
     </div>
-</section>
+</section> -->
+
+<div class="filters" id="filters">
+    <p class="filter-text">Filters:</p>
+    <div class="filter-container">
+        <form class="custom-input js-search-form">
+            <label for="search" class="visually-hidden">Search for anything</label>
+            <input
+                id="search"
+                class="search-input js-search-input"
+                type="text"
+                name="search"
+                placeholder="Search for anything"
+        />
+        <button class="search-btn filter-btn" type="submit" aria-label="search">
+            <span>
+                <svg width="20" height="20">
+                    <use href="./img/icons-tank.svg#icon-search" />
+                </svg>
+            </span>
+        </button>
+        </form>
+        
+        <div class="custom-select custom-select-ctg" aria-haspopup="listbox">
+            <input
+                type="text"
+                class="selected-option selected-option-ctgr js-category"
+                tabindex="-1"
+                placeholder="Categories"
+                readonly
+                disabled
+            />
+            <button
+                class="categories-btn filter-btn"
+                type="button"
+                aria-label="Category option"
+            >
+            <span>
+                <svg width="20" height="20">
+                    <use href="../img/icons-tank.svg#icon-down-btn" />
+                </svg>
+            </span>
+            </button>
+            <div class="select-options select-opt js-ctg-select-options" tabindex="0">
+                <div class="text-options" tabindex="0">Show all</div>
+            </div>
+        </div>
+        
+        <div class="custom-select custom-select-sort" aria-haspopup="listbox">
+            <input
+                type="text"
+                class="selected-option sort-select selected-option-sort"
+                placeholder="A to Z"
+                tabindex="-1"
+                readonly
+                disabled
+        />
+            <button
+                class="sort-btn filter-btn"
+                type="button"
+                aria-label="Category option"
+                >
+                <span>
+                    <svg width="20" height="20">
+                        <use href="../img/icons-tank.svg#icon-down-btn" />
+                    </svg>
+                </span>
+            </button>
+            <div class="select-options js-sort-select-options" tabindex="0">
+
+            </div>
+        </div>
+    </div>
+</div>

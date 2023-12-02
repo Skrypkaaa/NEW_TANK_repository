@@ -1,8 +1,12 @@
-import './js/bourique-api';
-import './js/local-storage';
+import './js/home';
+import './js/api-t';
+// import './js/bourique-api';
+// import './js/local-storage';
 import './js/aside';
 import './js/filters';
 import './js/footer';
 import './js/select';
 import './js/modal-markup';
 import './js/modal-succces';
+import './js/pagination';
+import './js/product-on-click';
