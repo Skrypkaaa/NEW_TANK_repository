@@ -1,7 +1,7 @@
-import { FoodBoutiqueAPI } from './food-api';
+import { FoodBoutiqueAPI } from './bourique-api';
 import icons from '../img/icons-tank.svg';
-import { onClickCart } from './product-list-click';
-import { ShopStorage } from './local-storage-api';
+// import { onClickCart } from './product-list-click';
+import { ShopStorage } from './local-storage';
 import { setCartStateForOneProduct } from './home';
 import { changeQuantityOrderedInBasket } from './home';
 const modalEl = document.querySelector('.modal-prod-wrapper');
