@@ -4,3 +4,7 @@ import './js/aside';
 import './js/filters';
 import './js/footer';
 import './js/select';
+import './js/cart/cart-content';
+import './js/cart/cart-main';
+import './js/cart/cart-product-list';
+import './js/cart/cart-product-markup';
