@@ -23,7 +23,7 @@
   height: 60px;
   border-radius: 50%;
   background-color: transparent;
-  color: var(--third-bg);
+  color: var(--white-color);
 }
 .prod-list-discount-label-svg {
   width: 100%;
@@ -37,7 +37,7 @@
 }
 .product-name,
 .price {
-  color: var(--btn-black);
+  color: var(--black-color);
   font-size: 18px;
   line-height: 1.11;
 }
@@ -50,13 +50,13 @@
   margin-bottom: 40px;
 }
 .product-text {
-  color: var(--black-transparent);
+  color: rgba(1, 1, 1, 0.30);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
 }
 .product-text-black {
-  color: var(--text);
+  color: var(--black-color);
   margin-right: 8px;
 }
 .btn-shopping-cart {
@@ -123,7 +123,7 @@
   }
   .product-name,
   .price {
-    color: var(--btn-black);
+    color: var(--black-color);
     font-size: 20px;
     line-height: 1.2;
   }

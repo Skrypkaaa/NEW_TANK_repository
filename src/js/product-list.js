@@ -1,6 +1,4 @@
-product-list.js
-
-import icons from '../img/icons.svg';
+import icons from '../img/icons-tank.svg';
 
 export function markupProductsList(productsObj) {
   if (productsObj.length) {

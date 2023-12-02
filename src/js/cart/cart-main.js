@@ -1,7 +1,7 @@
 import { ShopStorage } from '../local-storage';
 import { FoodBoutiqueAPI } from '../bourique-api';
 import Swal from 'sweetalert2';
-// import { openSuccessModal } from '../modal-success';
+import { openSuccessModal } from '../modal-succces'
 import { updateTotalPrice } from './cart-product-list';
 import { changeNumberInCart } from './cart-product-list';
 import { cartVisibillity } from './cart-content';

@@ -1,8 +1,8 @@
 import { FoodBoutiqueAPI } from './bourique-api';
 import { Storage, ShopStorage } from './local-storage';
-// import { renderProductList } from './render-product-list';
+import { renderProductList } from './render-product-list';
 import { renderPopularProd, renderDiscountProd } from './aside';
-// import { initPagination } from './pagination/pagination-handler';
+import { initPagination } from './pagination';
 import {
   initKeywordInFilter,
   initCategoryInFilter,
@@ -42,8 +42,6 @@ const popularityStorage = new Storage(POPULARITY_STORAGE);
 const discountStorage = new Storage(DISCOUNT_STORAGE);
 const shopStorage = new ShopStorage(SHOP_STORAGE);
 
-// let allItem;
-
 contentWrapperRef.addEventListener('click', onButtonCartClick);
 window.addEventListener('resize', debounce(onWindowResize, 250));
 
@@ -59,7 +57,6 @@ const filterParams = filterStorage.getValue();
 initLoad(filterParams);
 
 async function onWindowResize() {
-  // console.log('resize');
   if (filterStorage.getValue().limit === getPageLimit()) {
     return;
   }
@@ -105,8 +102,6 @@ async function initLoad(filterParams) {
   initSortInFilter();
   initSelectedSortOption();
   initPagination();
-  // allItem = addListenerToAllCard();
-  // filterHandler();
   setCartStateForAllProducts();
 }
 
@@ -114,21 +109,16 @@ changeQuantityOrderedInBasket(shopStorage.getAllProducts());
 
 async function getCategories() {
   try {
-    // loader show
     const productCategories = await foodBoutique.getProductCategories();
     categoryStorage.setValue(productCategories);
-    // fillCategoryList(categoryListRef, categoryStorage.getValue());
-    // categoryStorage.getValue();
   } catch (error) {
     console.log(error);
   } finally {
-    //  loader hide
   }
 }
 
 export async function getProducts(filterParams) {
   try {
-    // loader show
     productListRef.classList.add('js-loader');
     const products = await foodBoutique.getProducts(filterParams);
     productStorage.setValue(products);
@@ -143,7 +133,6 @@ export async function getProducts(filterParams) {
 
 async function getPopularProducts() {
   try {
-    // loader show
     popularProductListRef.classList.add('js-loader');
     const popularProducts = await foodBoutique.getPopularProducts();
     popularityStorage.setValue(popularProducts);
@@ -151,14 +140,12 @@ async function getPopularProducts() {
   } catch (error) {
     console.log(error);
   } finally {
-    //  loader hide
     popularProductListRef.classList.remove('js-loader');
   }
 }
 
 async function getDiscountedProducts() {
   try {
-    // loader show
     discountProductListRef.classList.add('js-loader');
     const discountedProducts = await foodBoutique.getDiscountedProducts();
     discountStorage.setValue(discountedProducts);
@@ -166,7 +153,6 @@ async function getDiscountedProducts() {
   } catch (error) {
     console.log(error);
   } finally {
-    //  loader hide
     discountProductListRef.classList.remove('js-loader');
   }
 }
@@ -199,7 +185,6 @@ export function setCartStateForAllProducts() {
 
 export function setCartStateForOneProduct(prodId, state) {
   const buttons = LISTS_TO_INSPECT.map(list => getButtonById(list, prodId));
-  // Установка состояния кнопок
   changeButtonsState(buttons, state);
 }
 
@@ -227,7 +212,6 @@ function changeButtonsState(buttons, state) {
 
 function onButtonCartClick(event) {
   const { target } = event;
-  // console.dir(target.closest(`.${BTN_CART_CLASS}`));
   if (
     !(
       target.classList.contains(BTN_CART_CLASS) ||
@@ -243,7 +227,6 @@ function onButtonCartClick(event) {
 
   const prodId = target.closest(`.${CARD_LI_CLASS}`).dataset.id;
   const localStorageDataId = target.closest(`ul`).dataset.lsName;
-  // console.log(localStorageDataId);
 
   setCartStateForOneProduct(prodId, IN_CART);
   addProductToStorage(localStorageDataId, prodId);

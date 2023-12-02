@@ -6,7 +6,7 @@ export class FoodBoutiqueAPI {
     constructor() {}
 
     // Get categories
-    async getProductsCategories() {
+    async getProductCategories() {
         const { data } = await axios('/products/categories');
         return data;
     }
