@@ -12,8 +12,9 @@
   
   <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
   <script type="module" crossorigin src="/NEW_TANK_repository/commonHelpers2.js"></script>
-  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/vendor-bb007519.js">
-  <link rel="stylesheet" href="/NEW_TANK_repository/assets/styles-0f6892a8.css">
+  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/vendor-5ef907e7.js">
+  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/footer-87ceeb04.js">
+  <link rel="stylesheet" href="/NEW_TANK_repository/assets/footer-5bfedde2.css">
 </head>
 
 <body>
@@ -57,7 +58,9 @@
   </div>
 </section>
 
-  <section class="hero">
+  
+  <main>
+    <section class="hero">
   <div class="container">
     <div class="hero-container">
       <h1 class="hero-title">Welcome to the <span>Food</span> Boutique!</h1>
@@ -93,7 +96,9 @@
     </div>
   </div>
 </section>
-  <section class="filters">
+      <section class="content-section">
+        <div class="container content-container">
+          <!-- <section class="filters">
     <div class="container">
         <div class="styleFilterPosition">
             <h2 class="styleFilter">Filters:</h2>
@@ -121,185 +126,111 @@
             </div>
         </form>
     </div>
-</section>
-  
-  <div>
-    <div class="products-contain">
-    <h1 class="h-popular">Popular products</h1>
-    <div class="products-container">
-        <div class="product-template">
-            <div class="popular-con">
-                <div class="product-img-container"> <img src="./img/popular-products.png" alt="" class="product-img">
-                </div>
-                <div class="product-text">
-                    <h3 class="product-name"></h3>
-                    <p class="product side">
-                        Category: <span class="category-size"></span>
-                    <div class="product">Size: <span class="value-size"></span>
-                        Popularity: <span class="popularity-size"></span></div>
-                    </p>
-                </div>
-            </div>
-            <button class="add-to-cart-btn cart-btn">
-                <svg class="ico icon-on">
-                    <use href="./img/kupi-tank-sprite.svg#icon-basket"></use>
+</section> -->
+
+<div class="filters" id="filters">
+    <p class="filter-text">Filters:</p>
+    <div class="filter-container">
+        <form class="custom-input js-search-form">
+            <label for="search" class="visually-hidden">Search for anything</label>
+            <input
+                id="search"
+                class="search-input js-search-input"
+                type="text"
+                name="search"
+                placeholder="Search for anything"
+        />
+        <button class="search-btn filter-btn" type="submit" aria-label="search">
+            <span>
+                <svg width="20" height="20">
+                    <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-search" />
                 </svg>
-                <svg class="ico icon-off" style="display: none;">
-                    <use href="./img/kupi-tank-sprite.svg#icon-check"></use>
+            </span>
+        </button>
+        </form>
+        
+        <div class="custom-select custom-select-ctg" aria-haspopup="listbox">
+            <input
+                type="text"
+                class="selected-option selected-option-ctgr js-category"
+                tabindex="-1"
+                placeholder="Categories"
+                readonly
+                disabled
+            />
+            <button
+                class="categories-btn filter-btn"
+                type="button"
+                aria-label="Category option"
+            >
+            <span>
+                <svg width="20" height="20">
+                    <use href="../img/icons-tank.svg#icon-down-btn" />
                 </svg>
+            </span>
             </button>
+            <div class="select-options select-opt js-ctg-select-options" tabindex="0">
+                <div class="text-options" tabindex="0">Show all</div>
+            </div>
         </div>
-        <div class="product-template">
-            <div class="popular-con">
-                <div class="product-img-container"> <img src="./img/popular-products.png" alt="" class="product-img">
-                </div>
-                <div class="product-text">
-                    <h3 class="product-name"></h3>
-                    <p class="product side">
-                        Category: <span class="category-size"></span>
-                    <div class="product">Size: <span class="value-size"></span>
-                        Popularity: <span class="popularity-size"></span></div>
-                    </p>
-                </div>
-            </div>
-            <button class="add-to-cart-btn cart-btn">
-                <svg class="ico icon-on">
-                    <use href="./img/kupi-tank-sprite.svg#icon-basket"></use>
-                </svg>
-                <svg class="ico icon-off" style="display: none;">
-                    <use href="./img/kupi-tank-sprite.svg#icon-check"></use>
-                </svg>
+        
+        <div class="custom-select custom-select-sort" aria-haspopup="listbox">
+            <input
+                type="text"
+                class="selected-option sort-select selected-option-sort"
+                placeholder="A to Z"
+                tabindex="-1"
+                readonly
+                disabled
+        />
+            <button
+                class="sort-btn filter-btn"
+                type="button"
+                aria-label="Category option"
+                >
+                <span>
+                    <svg width="20" height="20">
+                        <use href="../img/icons-tank.svg#icon-down-btn" />
+                    </svg>
+                </span>
             </button>
-        </div>
-        <div class="product-template">
-            <div class="popular-con">
-                <div class="product-img-container"> <img src="./img/popular-products.png" alt="" class="product-img">
-                </div>
-                <div class="product-text">
-                    <h3 class="product-name"></h3>
-                    <p class="product side">
-                        Category: <span class="category-size"></span>
-                    <div class="product">Size: <span class="value-size"></span>
-                        Popularity: <span class="popularity-size"></span></div>
-                    </p>
-                </div>
+            <div class="select-options js-sort-select-options" tabindex="0">
+
             </div>
-            <button class="add-to-cart-btn cart-btn">
-                <svg class="ico icon-on">
-                    <use href="./img/kupi-tank-sprite.svg#icon-basket"></use>
-                </svg>
-                <svg class="ico icon-off" style="display: none;">
-                    <use href="./img/kupi-tank-sprite#icon-check"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="product-template">
-            <div class="popular-con">
-                <div class="product-img-container"> <img src="./img/popular-products.png" alt="" class="product-img">
-                </div>
-                <div class="product-text">
-                    <h3 class="product-name"></h3>
-                    <p class="product side">
-                        Category: <span class="category-size"></span>
-                    <div class="product">Size: <span class="value-size"></span>
-                        Popularity: <span class="popularity-size"></span></div>
-                    </p>
-                </div>
-            </div>
-            <button class="add-to-cart-btn cart-btn">
-                <svg class="ico icon-on">
-                    <use href="./img/kupi-tank-sprite.svg#icon-basket"></use>
-                </svg>
-                <svg class="ico icon-off" style="display: none;">
-                    <use href="./img/kupi-tank-sprite.svg#icon-check"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="product-template">
-            <div class="popular-con">
-                <div class="product-img-container"> <img src="./img/popular-products.png" alt="" class="product-img">
-                </div>
-                <div class="product-text">
-                    <h3 class="product-name"></h3>
-                    <p class="product side">
-                        Category: <span class="category-size"></span>
-                    <div class="product">Size: <span class="value-size"></span>
-                        Popularity: <span class="popularity-size"></span></div>
-                    </p>
-                </div>
-            </div>
-            <button class="add-to-cart-btn cart-btn">
-                <svg class="ico icon-on">
-                    <use href="./img/kupi-tank-sprite.svg#icon-basket"></use>
-                </svg>
-                <svg class="ico icon-off" style="display: none;">
-                    <use href="./img/kupi-tank-sprite.svg#icon-check"></use>
-                </svg>
-            </button>
         </div>
     </div>
 </div>
-    <section class="discount discount-container">
-    <h2 class="discount-caption">Discount products</h2>
+          <div class="content-wrapper">
+            <div class="products-wrapper">
+              <ul
+                class="product-card-list"
+                data-ls-name="product"
+                id="products"
+              ></ul>
+              <div class="pagination">
+    <div class="btn-container">
+        <ul class="btn-list">
 
-    <ul class="discount-list" data-ls-name="discount">
-        <li class="discount-item js-card-item" data-id="640c2dd963a319ea671e3891">
-            <a class="products-card-link" href="#">
-                <div class="discount-img-wrapper">
-                    <img src="/NEW_TANK_repository/assets/discount-products1-cead8dcd.png"
-                        alt="Apricot" class="discount-img" loading="lazy">
-                </div>
-            </a>
-            <div class="discount-desc-wrapper">
-                <a class="products-card-link" href="#">
-                    <p class="discount-desc-text text-overflow">Apricot</p>
-                </a>
-                <div class="discount-box">
-                    <p class="discount-desc-text">$0.79</p>
-                    <button type="button" class="discount-btn btn js-add-btn"
-                        aria-label="add the product to the basket">
-                        <svg class="discount-desc-svg">
-                        <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-shopping-cart" class="discount-desc-added"></use>
-                        </svg>
-                    </button>
-                </div>
+        </ul>
+    </div>
+</div>
             </div>
-            <div class="discount-box-label">
-                <svg class="discount-label-svg">
-                    <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-discount"></use>  
-                </svg>
-            </div>
-        </li>
-        <li class="discount-item js-card-item" data-id="640c2dd963a319ea671e365d">
-            <a class="products-card-link" href="#">
-                <div class="discount-img-wrapper">
-                    <img src="/NEW_TANK_repository/assets/discount-products2-337ef1a2.png" alt="Dark Chocolate"
-                        class="discount-img" loading="lazy">
-                </div>
-            </a>
-            <div class="discount-desc-wrapper">
-                <a class="products-card-link" href="#">
-                    <p class="discount-desc-text text-overflow">Dark Chocolate</p>
-                </a>
-                <div class="discount-box">
-                    <p class="discount-desc-text">$6.99</p>
-                    <button type="button" class="discount-btn btn js-add-btn"
-                        aria-label="add the product to the basket">
-                        <svg class="discount-desc-svg">
-                            <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-shopping-cart" class="discount-desc-added"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="discount-box-label">
-                <svg class="discount-label-svg">
-                    <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-discount"></use>
-                </svg>
-            </div>
-        </li>
-    </ul>
-</section>
-  </div>
+            <div class="aside-wrappeer">
+    <section class="popular">
+        <h2 class="popular-caption">Popular products</h2>
+        <ul class="popular-list" data-ls-name="popular"></ul>
+    </section>
+
+    <section class="discount">
+        <h2 class="discount-caption">Discount products</h2>
+        <ul class="discount-list" data-ls-name="discount"></ul>
+    </section>
+</div>
+          </div>
+        </div>
+      </section>
+  </main>
+
   
 <footer id="footer" class="footer">
     <div class="container-footer container">
@@ -360,6 +291,8 @@
         </div>
     </div>
 </footer>
+  <div class="modal-prod-wrapper"></div>
+
   
 </body>
 
