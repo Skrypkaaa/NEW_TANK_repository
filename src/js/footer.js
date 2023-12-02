@@ -1,6 +1,7 @@
 import { FoodBoutiqueAPI } from './bourique-api.js';
 import Swal from 'sweetalert2';
 
+
 const FoodAp = new FoodBoutiqueAPI();
 
 const form = document.querySelector('form[name="E-mail"]');
