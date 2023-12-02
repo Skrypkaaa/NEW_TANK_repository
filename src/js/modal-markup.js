@@ -1,5 +1,5 @@
 import { FoodBoutiqueAPI } from './food-api';
-import icons from '../img/icons.svg';
+import icons from '../img/icons-tank.svg';
 import { onClickCart } from './product-list-click';
 import { ShopStorage } from './local-storage-api';
 import { setCartStateForOneProduct } from './home';
