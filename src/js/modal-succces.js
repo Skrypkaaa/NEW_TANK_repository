@@ -1,4 +1,4 @@
-import { Storage } from './local-storage-api';
+import { Storage } from './local-storage';
 import icons from '../img/icons.svg';
 
 const SHOP_STORAGE = 'shop-storage';
