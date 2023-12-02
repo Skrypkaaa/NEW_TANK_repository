@@ -1,5 +1,5 @@
 import { Storage } from './local-storage';
-import icons from '../img/icons.svg';
+import icons from '../img/icons-tank.svg';
 
 const SHOP_STORAGE = 'shop-storage';
 const shopStorage = new Storage(SHOP_STORAGE);
