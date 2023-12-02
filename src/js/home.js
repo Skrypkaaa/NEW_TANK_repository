@@ -1,15 +1,15 @@
-import { FoodBoutiqueAPI } from './food-api';
-import { Storage, ShopStorage } from './local-storage-api';
-import { renderProductList } from './render-product-list';
+import { FoodBoutiqueAPI } from './bourique-api';
+import { Storage, ShopStorage } from './local-storage';
+// import { renderProductList } from './render-product-list';
 import { renderPopularProd, renderDiscountProd } from './aside';
-import { initPagination } from './pagination/pagination-handler';
+// import { initPagination } from './pagination/pagination-handler';
 import {
   initKeywordInFilter,
   initCategoryInFilter,
   initSelectedCtgOption,
   initSortInFilter,
   initSelectedSortOption,
-} from './filter';
+} from './filters';
 import debounce from 'debounce';
 
 const FILTER_STORAGE = 'filter-storage';
