@@ -1,4 +1,4 @@
-import{i as r,a as d,S as nt,F as ct,o as yt}from"./assets/footer-1223c6cf.js";import{d as St}from"./assets/vendor-5ef907e7.js";function ht(t){return t.length?t.map(({category:e,img:s,is10PercentOff:n,name:o,popularity:i,price:u,size:p,_id:h})=>n?`<li class="products-card-item js-card-item" data-id="${h}">
+import{i as r,a as d,S as nt,F as ct,o as yt}from"./assets/footer-e4c50fa1.js";import{d as St}from"./assets/vendor-5ef907e7.js";function ht(t){return t.length?t.map(({category:e,img:s,is10PercentOff:n,name:o,popularity:i,price:u,size:p,_id:h})=>n?`<li class="products-card-item js-card-item" data-id="${h}">
 
                   <div class="prod-list-discount-label">
                     <svg class="prod-list-discount-label-svg">
