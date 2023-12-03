@@ -1,5 +1,4 @@
 import './js/home';
-import './js/api-t';
 // import './js/bourique-api';
 // import './js/local-storage';
 import './js/aside';

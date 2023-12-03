@@ -1,7 +1,7 @@
 export function cartProductMarkup(arr) {
-    return arr
-        .map(({ category, img, name, price, size, _id }) => {
-            return `<li class="cart-item" data-id="${_id}">
+  return arr
+    .map(({ category, img, name, price, size, _id }) => {
+      return `<li class="cart-item" data-id="${_id}">
                         <img class="cart-img-product" src="${img}" alt="${name}" />
                         <div class="cart-product-description">
                             <p class="cart-product-name">${name}</p>
@@ -14,6 +14,6 @@ export function cartProductMarkup(arr) {
                             </svg>
                     </button>
                     </li>`;
-        })
+    })
     .join('');
 }

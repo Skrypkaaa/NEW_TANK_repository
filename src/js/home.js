@@ -32,8 +32,6 @@ const popularProductListRef = document.querySelector('.popular-list');
 const discountProductListRef = document.querySelector('.discount-list');
 const contentWrapperRef = document.querySelector('.content-wrapper');
 const spanCartRef = document.querySelector('#number-of-products');
-const categoryListRef = document.querySelector('.js-category');
-
 
 const foodBoutique = new FoodBoutiqueAPI();
 const filterStorage = new Storage(FILTER_STORAGE);
