@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="./public/tdesign_cabbage (1).png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food Boutique</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -15,25 +15,21 @@
 
 <body>
   <load src="partials/header.html" />
-  
+
   <main>
     <load src="partials/hero.html" />
-      <section class="content-section">
-        <div class="container content-container">
-          <load src="partials/filters.html" />
-          <div class="content-wrapper">
-            <div class="products-wrapper">
-              <ul
-                class="product-card-list"
-                data-ls-name="product"
-                id="products"
-              ></ul>
-              <load src="partials/pagination.html" />
-            </div>
-            <load src="partials/popular-and-discount.html" />
+    <section class="content-section">
+      <div class="container content-container">
+        <load src="partials/filters.html" />
+        <div class="content-wrapper">
+          <div class="products-wrapper">
+            <ul class="product-card-list" data-ls-name="product" id="products"></ul>
+            <load src="partials/pagination.html" />
           </div>
+          <load src="partials/popular-and-discount.html" />
         </div>
-      </section>
+      </div>
+    </section>
   </main>
 
   <load src="partials/footer.html" />
