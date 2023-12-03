@@ -67,6 +67,11 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.order-input:invalid {
+    background-color: inherit;
+    border: 1px solid rgba(1, 1, 1, 0.30);
+}
+
 .order-input:hover,
 .order-input:focus,
 .order-input:active {
