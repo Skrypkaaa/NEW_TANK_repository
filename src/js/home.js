@@ -32,6 +32,8 @@ const popularProductListRef = document.querySelector('.popular-list');
 const discountProductListRef = document.querySelector('.discount-list');
 const contentWrapperRef = document.querySelector('.content-wrapper');
 const spanCartRef = document.querySelector('#number-of-products');
+const categoryListRef = document.querySelector('.js-category');
+
 
 const foodBoutique = new FoodBoutiqueAPI();
 const filterStorage = new Storage(FILTER_STORAGE);
@@ -41,7 +43,6 @@ const popularityStorage = new Storage(POPULARITY_STORAGE);
 const discountStorage = new Storage(DISCOUNT_STORAGE);
 const shopStorage = new ShopStorage(SHOP_STORAGE);
 
-contentWrapperRef.addEventListener('click', onButtonCartClick);
 window.addEventListener('resize', debounce(onWindowResize, 250));
 
 if (!filterStorage.getValue()) {
@@ -171,6 +172,8 @@ const IN_CART = true;
 const IS_ADDED_CLASS = 'is-added';
 const BTN_CART_CLASS = 'js-add-btn';
 const CARD_LI_CLASS = 'js-card-item';
+
+contentWrapperRef.addEventListener('click', onButtonCartClick);
 
 export function setCartStateForAllProducts() {
   if (!shopStorage || !shopStorage.getAllProducts().length) {
