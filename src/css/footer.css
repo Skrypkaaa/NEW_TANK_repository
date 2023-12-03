@@ -237,7 +237,6 @@ opacity: 0.9;
 }
 }
 
-/* Cтили для не валидных полей */
 input:invalid {
     border-color: #900;
     background-color: rgb(100, 122, 95);
@@ -247,7 +246,6 @@ input:focus:invalid {
     outline: none;
 }
 
-/* Cтили для кастомных сообщений об ошибке */
 
 .error {
     width: 100%;

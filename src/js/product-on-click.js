@@ -1,6 +1,7 @@
-import { markupProductsList } from './product-list';
+// import { markupProductsList } from './product-list';
 import { openModal } from './modal-markup';
-import { ShopStorage } from './local-storage';
+import { openSuccessModal } from './modal-succces';
+// import { ShopStorage, Storage } from './local-storage';
 
 const listEl = document.querySelector('.content-wrapper');
 listEl.addEventListener('click', onClickCart);
@@ -14,6 +15,7 @@ export function onClickCart(e) {
     ) {
         const id = clickedElement.closest('li').dataset.id;
         openModal(id);
+        openSuccessModal(id);
     } else {
         return;
     }

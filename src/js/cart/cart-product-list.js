@@ -4,7 +4,7 @@ import { cartVisibillity } from './cart-content';
 
 let arrCarts = [];
 const cartNumberProduct = document.querySelector('.number-of-product');
-const navSpan = document.querySelector('.nav-span');
+const navSpan = document.querySelector('#number-of-products');
 const totalAmount = document.querySelector('.total-amount');
 const cardListOrder = document.querySelector('.cart-list');
 const shopStorage = new ShopStorage('shop-storage');

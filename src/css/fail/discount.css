@@ -110,9 +110,7 @@ font-size: 18px;
 .js-add-btn svg {
     pointer-events: none;
 }
-/* .btn svg {
-    fill: #e8e8e2;
-} */
+
 .discount-desc-svg {
     position: absolute;
     top: 50%;
