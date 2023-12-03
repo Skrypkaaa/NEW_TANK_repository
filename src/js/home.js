@@ -34,6 +34,7 @@ const contentWrapperRef = document.querySelector('.content-wrapper');
 const spanCartRef = document.querySelector('#number-of-products');
 const categoryListRef = document.querySelector('.js-category');
 
+
 const foodBoutique = new FoodBoutiqueAPI();
 const filterStorage = new Storage(FILTER_STORAGE);
 const categoryStorage = new Storage(CATEGORY_STORAGE);
@@ -167,7 +168,6 @@ const POPULARITY_STORAGE_LIST_ID = 'popular';
 const DISCOUNT_STORAGE_LIST_ID = 'discount';
 
 const IN_CART = true;
-const NOT_IN_CART = false;
 
 const IS_ADDED_CLASS = 'is-added';
 const BTN_CART_CLASS = 'js-add-btn';
