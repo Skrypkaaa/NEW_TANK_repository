@@ -10,7 +10,7 @@ export function cartProductMarkup(arr) {
                         </div>
                         <button type="button" class="cart-product-close-btn">
                             <svg class="cart-icon-close">
-                                <use href="./img/icons-tank.svg#icon-close"></use>
+                                <use href="../img/icons-tank.svg#icon-close"></use>
                             </svg>
                     </button>
                     </li>`;
