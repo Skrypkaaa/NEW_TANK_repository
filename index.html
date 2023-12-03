@@ -13,7 +13,7 @@
   <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
   <script type="module" crossorigin src="/NEW_TANK_repository/commonHelpers2.js"></script>
   <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/vendor-5ef907e7.js">
-  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/footer-622ac31d.js">
+  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/footer-1223c6cf.js">
   <link rel="stylesheet" href="/NEW_TANK_repository/assets/footer-1e74c3b0.css">
 </head>
 
@@ -25,7 +25,7 @@
         <div class="header-logo-container">
           <svg class="header-logo-icon">
             <use
-              href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-logo-food"
+              href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-logo-food"
               class="icon-one"
             ></use>
           </svg>
@@ -43,7 +43,7 @@
             <a href="./cart.html" class="nav-cart">
               <svg class="nav-icon">
                 <use
-                  href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-basket"
+                  href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-basket"
                   class="icon-one"
                 ></use>
               </svg>
@@ -70,7 +70,7 @@
       </p>
       <div class="hero-img-container">
         <svg class="hero-icon-organic-food">
-          <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-organic-food"></use>
+          <use href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-organic-food"></use>
         </svg>
         <picture>
           <source
@@ -129,77 +129,58 @@
 </section> -->
 
 <div class="filters" id="filters">
-  <p class="filter-text">Filters:</p>
-  <div class="filter-container">
-    <form class="custom-input js-search-form">
-      <label for="search" class="visually-hidden">Search for anything</label>
-      <input
-        id="search"
-        class="search-input js-search-input"
-        autocomplete="off"
-        type="text"
-        name="search"
-        placeholder="Search for anything"
-      />
-      <button class="search-btn filter-btn" type="submit" aria-label="search">
-        <span>
-          <svg width="20" height="20">
-            <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-search" />
-          </svg>
-        </span>
-      </button>
-    </form>
+    <p class="filter-text">Filters:</p>
+    <div class="filter-container">
+        <form class="custom-input js-search-form">
+            <label for="search" class="visually-hidden">Search for anything</label>
+            <input id="search" class="search-input js-search-input" autocomplete="off" type="text" name="search"
+                placeholder="Search for anything" />
+            <button class="search-btn filter-btn" type="submit" aria-label="search">
+                <span>
+                    <svg width="20" height="20">
+                        <use href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-baseline-search" />
+                    </svg>
+                </span>
+            </button>
+        </form>
 
-    <div class="custom-select custom-select-ctg" aria-haspopup="listbox">
-      <input
-        type="text"
-        class="selected-option selected-option-ctgr js-category"
-        tabindex="-1"
-        placeholder="Categories"
-        readonly
-        disabled
-      />
-      <button
-        class="categories-btn filter-btn"
-        type="button"
-        aria-label="Category option"
-      >
-        <span>
-          <svg width="20" height="20">
-            <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-down-btn" />
-          </svg>
-        </span>
-      </button>
-      <div class="select-options select-opt js-ctg-select-options" tabindex="0">
-        <div class="text-options" tabindex="0">Show all</div>
-      </div>
-    </div>
+        <div class="custom-select custom-select-ctg" aria-haspopup="listbox">
+            <input type="text" class="selected-option selected-option-ctgr js-category" tabindex="-1"
+                placeholder="Categories" readonly disabled />
+            <button class="categories-btn filter-btn" type="button" aria-label="Category option">
+                <span>
+                    <!-- <svg width="20" height="20">
+                        <use href="./img/icons-tank.svg#icon-down-btn" />
+                    </svg> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="#010101" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </button>
+            <div class="select-options select-opt js-ctg-select-options" tabindex="0">
+                <div class="text-options" tabindex="0">Show all</div>
+            </div>
+        </div>
 
-    <div class="custom-select custom-select-sort" aria-haspopup="listbox">
-      <input
-        type="text"
-        class="selected-option sort-select selected-option-sort"
-        placeholder="A to Z"
-        tabindex="-1"
-        readonly
-        disabled
-      />
-      <button
-        class="sort-btn filter-btn"
-        type="button"
-        aria-label="Category option"
-      >
-        <span>
-          <svg width="20" height="20">
-            <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-down-btn" />
-          </svg>
-        </span>
-      </button>
-      <div class="select-options js-sort-select-options" tabindex="0"></div>
+        <div class="custom-select custom-select-sort" aria-haspopup="listbox">
+            <input type="text" class="selected-option sort-select selected-option-sort" placeholder="A to Z"
+                tabindex="-1" readonly disabled />
+            <button class="sort-btn filter-btn" type="button" aria-label="Category option">
+                <span>
+                    <!-- <svg width="20" height="20">
+                        <use href="./img/icons-tank.svg#icon-down-btn" />
+                    </svg> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="#010101" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </button>
+            <div class="select-options js-sort-select-options" tabindex="0"></div>
+        </div>
     </div>
-  </div>
 </div>
-
           <div class="content-wrapper">
             <div class="products-wrapper">
               <ul
@@ -244,21 +225,21 @@
                         <li>
                             <a class="footer-icon-link link" href="https://www.facebook.com/goITclub/">
                                 <svg class="footer-soclink-icon" width="24" height="24">
-                                <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-facebook"></use>
+                                <use href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>  
                                 <a class="footer-icon-link link" href="https://www.instagram.com/goitclub/">
                                 <svg class="footer-soclink-icon" width="24" height="24">
-                                    <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-instagram"></use>
+                                    <use href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>  
                             <a class="footer-icon-link link" href="https://www.youtube.com/c/GoIT">
                             <svg class="footer-soclink-icon" width="24" height="24">
-                                <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-youtube"></use>
+                                <use href="/NEW_TANK_repository/assets/icons-tank-77ba4db1.svg#icon-youtube"></use>
                             </svg>
                         </a>
                         </li>
