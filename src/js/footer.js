@@ -1,4 +1,4 @@
-import { FoodBoutiqueAPI } from './bourique-api';
+import { FoodBoutiqueAPI } from './bourique-api.js';
 import Swal from 'sweetalert2';
 
 const FoodAp = new FoodBoutiqueAPI();
