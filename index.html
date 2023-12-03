@@ -13,8 +13,8 @@
   <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
   <script type="module" crossorigin src="/NEW_TANK_repository/commonHelpers2.js"></script>
   <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/vendor-5ef907e7.js">
-  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/footer-6b91f614.js">
-  <link rel="stylesheet" href="/NEW_TANK_repository/assets/footer-70d57aa7.css">
+  <link rel="modulepreload" crossorigin href="/NEW_TANK_repository/assets/footer-63b8c927.js">
+  <link rel="stylesheet" href="/NEW_TANK_repository/assets/footer-56ae56cf.css">
 </head>
 
 <body>
@@ -133,61 +133,36 @@
     <div class="filter-container">
         <form class="custom-input js-search-form">
             <label for="search" class="visually-hidden">Search for anything</label>
-            <input
-                id="search"
-                class="search-input js-search-input"
-                type="text"
-                name="search"
-                placeholder="Search for anything"
-        />
-        <button class="search-btn filter-btn" type="submit" aria-label="search">
-            <span>
-                <svg width="20" height="20">
-                    <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-search" />
-                </svg>
-            </span>
-        </button>
+            <input id="search" class="search-input js-search-input" autocomplete="off" type="text" name="search"
+                placeholder="Search for anything" />
+            <button class="search-btn filter-btn" type="submit" aria-label="search">
+                <span>
+                    <svg width="20" height="20">
+                        <use href="/NEW_TANK_repository/assets/icons-tank-5c63b75a.svg#icon-search" />
+                    </svg>
+                </span>
+            </button>
         </form>
-        
+
         <div class="custom-select custom-select-ctg" aria-haspopup="listbox">
-            <input
-                type="text"
-                class="selected-option selected-option-ctgr js-category"
-                tabindex="-1"
-                placeholder="Categories"
-                readonly
-                disabled
-            />
-            <button
-                class="categories-btn filter-btn"
-                type="button"
-                aria-label="Category option"
-            >
-            <span>
-                <svg width="20" height="20">
-                    <use href="../img/icons-tank.svg#icon-down-btn" />
-                </svg>
-            </span>
+            <input type="text" class="selected-option selected-option-ctgr js-category" tabindex="-1"
+                placeholder="Categories" readonly disabled />
+            <button class="categories-btn filter-btn" type="button" aria-label="Category option">
+                <span>
+                    <svg width="20" height="20">
+                        <use href="../img/icons-tank.svg#icon-down-btn" />
+                    </svg>
+                </span>
             </button>
             <div class="select-options select-opt js-ctg-select-options" tabindex="0">
                 <div class="text-options" tabindex="0">Show all</div>
             </div>
         </div>
-        
+
         <div class="custom-select custom-select-sort" aria-haspopup="listbox">
-            <input
-                type="text"
-                class="selected-option sort-select selected-option-sort"
-                placeholder="A to Z"
-                tabindex="-1"
-                readonly
-                disabled
-        />
-            <button
-                class="sort-btn filter-btn"
-                type="button"
-                aria-label="Category option"
-                >
+            <input type="text" class="selected-option sort-select selected-option-sort" placeholder="A to Z"
+                tabindex="-1" readonly disabled />
+            <button class="sort-btn filter-btn" type="button" aria-label="Category option">
                 <span>
                     <svg width="20" height="20">
                         <use href="../img/icons-tank.svg#icon-down-btn" />
