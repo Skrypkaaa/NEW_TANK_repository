@@ -30,7 +30,7 @@
         </symbol>
 
         <symbol id="icon-check" viewBox="0 0 32 32">
-            <path stroke-linejoin="round" fill="none" stroke-linecap="round" stroke-width="4.57" d="M29.71 6.86 10.86 25.7l-8.57-8.57"/>
+            <path stroke-linejoin="round" fill="#E8E8E2" stroke-linecap="round" stroke-width="4.57" d="M29.71 6.86 10.86 25.7l-8.57-8.57"/>
         </symbol>
 
         <symbol id="icon-down-btn" viewBox="0 0 32 32">
